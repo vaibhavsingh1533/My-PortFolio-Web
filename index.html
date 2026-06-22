@@ -4,203 +4,479 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vaibhav Pal Singh | Full Stack Developer</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Vaibhav Pal Singh, a skilled Full Stack Web Developer and Java Programmer specializing in MERN stack, REST APIs, and responsive web design.">
+  <meta name="keywords" content="Vaibhav Pal Singh, Full Stack Developer, MERN Stack, Java Programmer, Software Engineer, Portfolio">
+  <meta name="author" content="Vaibhav Pal Singh">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Background blobs -->
-<div class="blob"></div>
-<div class="blob two"></div>
-
-<header class="hero">
-  <nav>
-    <h2 class="logo">Vaibhav</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="hero-wrapper">
-
-  <!-- PROFILE IMAGE -->
-  <div class="profile-pic">
-    <img src="profile.jpg" alt="Vaibhav Pal Singh">
+  <!-- Dynamic Glowing Background Blobs -->
+  <div class="blob-container">
+    <div class="blob blob-one"></div>
+    <div class="blob blob-two"></div>
+    <div class="blob blob-three"></div>
   </div>
 
-  <!-- HERO TEXT -->
-  <div class="hero-content">
-    <h3>Hello!</h3>
-    <h2>I'm <b>Vaibhav Pal Singh</b></h2>
-    <p>A Full Stack Web Developer and Java Programmer.</p>
-    <p>MERN Stack • REST APIs • Java • CRUD</p>
-
-    <div class="hero-btns">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="Vaibhav_Pal_Singh_Resume.pdf" download class="btn outline">
-        Download Resume
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-symbol"></span>
+        Vaibhav Pal Singh<span></span>
       </a>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu" id="mobileNavToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon hidden"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
     </div>
+  </header>
 
-    <!-- SOCIAL ICONS -->
-    <div class="social-links">
-      <a href="https://github.com/vaibhavsingh1533" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-      </a>
-      <a href="https://www.linkedin.com/in/vaibhav-pal-singh-845170285/" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
-      </a>
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-wrapper">
+      <div class="hero-image-area reveal-on-scroll">
+        <div class="profile-pic-container">
+          <div class="glowing-ring"></div>
+          <div class="profile-pic">
+            <img src="profile.jpg" alt="Vaibhav Pal Singh" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\' viewBox=\'0 0 200 200\'><defs><linearGradient id=\'grad\' x1=\'0%\' y1=\'0%\' x2=\'100%\' y2=\'100%\'><stop offset=\'0%\' style=\'stop-color:%234f8cff;stop-opacity:1\' /><stop offset=\'100%\' style=\'stop-color:%236ee7b7;stop-opacity:1\' /></linearGradient></defs><rect width=\'100%\' height=\'100%\' fill=\'url(%23grad)\'/><text x=\'50%\' y=\'55%\' font-family=\'Outfit, sans-serif\' font-size=\'70\' font-weight=\'bold\' fill=\'white\' text-anchor=\'middle\' dominant-baseline=\'middle\'>VP</text></svg>';">
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-content reveal-on-scroll">
+        <div class="badge">🚀 Available for Work</div>
+        <h3 class="greeting">Hello, I'm</h3>
+        <h1 class="name">Vaibhav Pal Singh</h1>
+        <h2 class="role-title">Full Stack Developer &amp; Java Programmer</h2>
+        <p class="hero-desc">
+          I build high-performance web applications using the MERN stack and solve complex problems with Java. Focused on clean architecture, reliable APIs, and seamless user experiences.
+        </p>
+        
+        <div class="tech-pills">
+          <span class="pill">MERN Stack</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Java (DSA)</span>
+          <span class="pill">CRUD Apps</span>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="Vaibhav_Pal_Singh_Resume.pdf" download class="btn btn-outline">
+            <span>Download Resume</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/vaibhavsingh1533" target="_blank" aria-label="GitHub" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/vaibhav-pal-singh-845170285/" target="_blank" aria-label="LinkedIn" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-</div>
-
-</header>
-
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I’m a Full Stack Web Developer fresher with hands-on experience in MERN stack,
-    REST APIs, and Java-based problem solving. I enjoy building scalable web
-    applications with clean architecture, authentication, CRUD operations,
-    and responsive user interfaces.
-  </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h4>Frontend</h4>
-      <p>HTML, CSS, JavaScript, React.js, Bootstrap</p>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container reveal-on-scroll">
+      <div class="section-title-wrapper">
+        <span class="subtitle">Get to Know Me</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-content">
+          <p class="about-text-lead">
+            I’m a Full Stack Web Developer fresher with hands-on experience in MERN stack, REST APIs, and Java-based problem solving.
+          </p>
+          <p class="about-text-body">
+            I enjoy building scalable web applications with clean architecture, robust user authentication, and responsive user interfaces. I love breaking down complex business requirements into simple, maintainable code structures.
+          </p>
+          
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-num">MERN</span>
+              <span class="stat-lbl">Expertise</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">300+</span>
+              <span class="stat-lbl">Java DSA Solved</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">1</span>
+              <span class="stat-lbl">Internship Done</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-image-card">
+          <div class="glass-container">
+            <h3>Quick Details</h3>
+            <ul class="details-list">
+              <li><strong>Location:</strong> Bhopal, Madhya Pradesh, India</li>
+              <li><strong>Education:</strong> Bachelor's Degree / Tech Background</li>
+              <li><strong>Role:</strong> Associate Developer / Full Stack Intern</li>
+              <li><strong>Specialty:</strong> Node.js, React.js, Express.js, Java</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="skill-card">
-      <h4>Backend</h4>
-      <p>Node.js, Express.js, REST APIs, Authentication</p>
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container reveal-on-scroll">
+      <div class="section-title-wrapper">
+        <span class="subtitle">My Arsenal</span>
+        <h2 class="section-title">Skills &amp; Capabilities</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-card hover-glow">
+          <div class="skill-header">
+            <div class="skill-icon-wrap frontend-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3>Frontend</h3>
+          </div>
+          <p class="skill-desc">Responsive layouts, user interfaces, interactive elements.</p>
+          <div class="skill-badges">
+            <span class="badge-pill">HTML5</span>
+            <span class="badge-pill">CSS3</span>
+            <span class="badge-pill">JavaScript</span>
+            <span class="badge-pill">React.js</span>
+            <span class="badge-pill">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card hover-glow">
+          <div class="skill-header">
+            <div class="skill-icon-wrap backend-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3>Backend</h3>
+          </div>
+          <p class="skill-desc">Server-side program architecture, route planning, API security.</p>
+          <div class="skill-badges">
+            <span class="badge-pill">Node.js</span>
+            <span class="badge-pill">Express.js</span>
+            <span class="badge-pill">RESTful APIs</span>
+            <span class="badge-pill">Auth (JWT / Sessions)</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-card hover-glow">
+          <div class="skill-header">
+            <div class="skill-icon-wrap database-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+            </div>
+            <h3>Databases</h3>
+          </div>
+          <p class="skill-desc">Designing scalable schemas, handling query performance.</p>
+          <div class="skill-badges">
+            <span class="badge-pill">MongoDB</span>
+            <span class="badge-pill">MySQL</span>
+            <span class="badge-pill">Mongoose</span>
+            <span class="badge-pill">SQL Queries</span>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="skill-card hover-glow">
+          <div class="skill-header">
+            <div class="skill-icon-wrap programming-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Programming</h3>
+          </div>
+          <p class="skill-desc">Object-oriented code patterns, computational complexity, algorithms.</p>
+          <div class="skill-badges">
+            <span class="badge-pill">Java</span>
+            <span class="badge-pill">Data Structures</span>
+            <span class="badge-pill">Algorithms</span>
+            <span class="badge-pill">OOPs Concepts</span>
+          </div>
+        </div>
+
+        <!-- Tools & Concepts -->
+        <div class="skill-card hover-glow">
+          <div class="skill-header">
+            <div class="skill-icon-wrap tools-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <h3>Tools &amp; Concepts</h3>
+          </div>
+          <p class="skill-desc">Modern workflows, version control, API architecture.</p>
+          <div class="skill-badges">
+            <span class="badge-pill">Git</span>
+            <span class="badge-pill">GitHub</span>
+            <span class="badge-pill">CRUD Workflow</span>
+            <span class="badge-pill">Deployment</span>
+            <span class="badge-pill">Responsive Design</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="skill-card">
-      <h4>Databases</h4>
-      <p>MongoDB, MySQL</p>
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="container reveal-on-scroll">
+      <div class="section-title-wrapper">
+        <span class="subtitle">My Professional Path</span>
+        <h2 class="section-title">Internship Experience</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content hover-glow">
+            <div class="timeline-meta">
+              <span class="date-badge">Sep 2023 – Nov 2023</span>
+              <span class="company-tag">Coding Thinker</span>
+            </div>
+            <h3 class="job-title">Full Stack Web Developer Intern</h3>
+            <ul class="job-highlights">
+              <li>Worked on a live web application using modern MERN stack technologies.</li>
+              <li>Developed and maintained responsive user dashboards using HTML, CSS, and JavaScript.</li>
+              <li>Collaborated closely with cross-functional team members on feature integration and QA.</li>
+              <li>Significantly improved UI accessibility, responsive behaviors, and page load speeds.</li>
+              <li>Adopted agile methodologies, attending standups and planning sprints.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="skill-card">
-      <h4>Programming</h4>
-      <p>Java, Data Structures & Algorithms</p>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container reveal-on-scroll">
+      <div class="section-title-wrapper">
+        <span class="subtitle">Case Studies</span>
+        <h2 class="section-title">My Projects</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: RideSnap -->
+        <div class="project-card hover-glow">
+          <div class="project-card-image-placeholder">
+            <div class="project-art gradient-indigo">
+              <span class="project-icon">🚗</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Socket.IO</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Google Maps</span>
+            </div>
+            <h3>RideSnap</h3>
+            <p class="project-description">
+              A high-performance real-time ride booking and dispatch platform featuring low-latency tracking, dynamic routing, and role-based access.
+            </p>
+            <ul class="project-bullet-points">
+              <li>Architected scalable RESTful APIs (MVC) for booking, fares, and user profiles; deployed on Render.</li>
+              <li>Secured system with JWT stateless authentication and granular RBAC for rider, driver, and admin roles.</li>
+              <li>Engineered Socket.IO real-time layer for instant status broadcasts and Google Maps distance-based fare routing.</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <span>Demo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="#" class="project-link-btn outline" title="View Source Code">
+                <span>Code</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: FarmConnect -->
+        <div class="project-card hover-glow">
+          <div class="project-card-image-placeholder">
+            <div class="project-art gradient-blue">
+              <span class="project-icon">🚜</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <div class="project-tags">
+              <span class="tag">MongoDB</span>
+              <span class="tag">Express</span>
+              <span class="tag">React</span>
+              <span class="tag">Node</span>
+            </div>
+            <h3>FarmConnect</h3>
+            <p class="project-description">
+              A full-stack agricultural platform mapping communication and transactions directly between local farmers and prospective bulk buyers.
+            </p>
+            <ul class="project-bullet-points">
+              <li>Designed and implemented RESTful APIs using Express.js.</li>
+              <li>Integrated MongoDB for product listings and user details.</li>
+              <li>Engineered a highly responsive React.js UI tailored for simple usability.</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <span>Demo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="#" class="project-link-btn outline" title="View Source Code">
+                <span>Code</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Air Ticket Reservation System -->
+        <div class="project-card hover-glow">
+          <div class="project-card-image-placeholder">
+            <div class="project-art gradient-emerald">
+              <span class="project-icon">✈️</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">EJS Templates</span>
+            </div>
+            <h3>Air Ticket Reservation System</h3>
+            <p class="project-description">
+              A comprehensive system providing online flight searching, booking, and account management tools.
+            </p>
+            <ul class="project-bullet-points">
+              <li>Integrated secure session-based authentication for travelers.</li>
+              <li>Exposed robust search query APIs filterable by dates and destination.</li>
+              <li>Used EJS rendering to update booking confirmation details in real time.</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <span>Demo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="#" class="project-link-btn outline" title="View Source Code">
+                <span>Code</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="skill-card">
-      <h4>Tools & Concepts</h4>
-      <p>Git, GitHub, CRUD, Deployment, Responsive Design</p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container reveal-on-scroll">
+      <div class="section-title-wrapper">
+        <span class="subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="contact-grid-centered">
+        <div class="contact-info-panel-centered">
+          <h3>Let's Create Something Amazing</h3>
+          <p class="contact-desc">
+            I'm currently seeking job opportunities or freelance projects. If you have an application idea or need a dedicated developer, feel free to reach out directly through any of the channels below!
+          </p>
+
+          <div class="contact-details-grid">
+            <div class="contact-detail-card hover-glow">
+              <div class="info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="info-content">
+                <span>Location</span>
+                <p>Bhopal, Madhya Pradesh, India</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-card hover-glow">
+              <div class="info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="info-content">
+                <span>Email</span>
+                <p><a href="mailto:vaibhavpalsingh1533@gmail.com">vaibhavpalsingh1533@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-card hover-glow">
+              <div class="info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="info-content">
+                <span>Phone</span>
+                <p><a href="tel:+916260374388">+91 6260374388</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials-grid-centered">
+            <a href="https://github.com/vaibhavsingh1533" target="_blank" title="GitHub" class="social-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/vaibhav-pal-singh-845170285/" target="_blank" title="LinkedIn" class="social-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <h2>Internship Experience</h2>
-
-  <div class="timeline">
-    <div class="card">
-      <h3>Full Stack Web Developer Intern</h3>
-      <span>Coding Thinker | Sep 2023 – Nov 2023</span>
-      <ul>
-        <li>Worked on a live web application using modern web technologies</li>
-        <li>Developed and maintained responsive dashboards using HTML, CSS, and JavaScript</li>
-        <li>Collaborated with team members on feature implementation and bug fixing</li>
-        <li>Improved UI usability and page performance</li>
-        <li>Followed basic Agile practices and team workflows</li>
-      </ul>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Vaibhav Pal Singh. Built with HTML, CSS, and JS. All Rights Reserved.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
+  <!-- Floating Resume Download Button -->
+  <a href="Vaibhav_Pal_Singh_Resume.pdf" download class="floating-resume-btn" title="Download Resume">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    <span class="floating-text">Resume</span>
+  </a>
 
-  <div class="projects-grid">
-
- <div class="project-card">
-      <h3>RideSnap- Real Time Ride Booking Platform</h3>
-      <ul>
-        <li>Integrated Google Maps API for location selection, distance calculation, and fare estimation</li>
-        <li>Developed RESTful APIs using Node.js and Express.js for ride and user management</li>
-        <li>Implemented JWT-based authentication with role-based access control.</li>
-        <li>Designed scalable backend architecture following MVC and REST best practices.</li>
-        <li>Enabled real-time ride updates using Socket.IO.</li>
-      </ul>
-    </div>
-    
-    <div class="project-card">
-      <h3>FarmConnect (MERN Stack)</h3>
-      <ul>
-        <li>Developed a full-stack platform connecting farmers and buyers</li>
-        <li>Designed and implemented RESTful APIs using Node.js and Express.js</li>
-        <li>Integrated MongoDB for data storage and CRUD operations</li>
-        <li>Built responsive UI using React.js focused on usability</li>
-        <li>Designed simple UX for non-technical users</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Air Ticket Reservation System</h3>
-      <ul>
-        <li>Built a flight booking web application using Node.js and Express</li>
-        <li>Implemented secure login and signup authentication</li>
-        <li>Created REST APIs for flight search and ticket booking</li>
-        <li>Handled backend routing, business logic, and MongoDB integration</li>
-        <li>Used EJS templates for dynamic rendering</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-
-  <p>📍 Bhopal, Madhya Pradesh, India</p>
-
-  <p>
-    📧 
-    <a href="mailto:vaibhavpalsingh1533@gmail.com">
-      vaibhavpalsingh1533@gmail.com
-    </a>
-  </p>
-
-  <p class="contact-phone">
-    📞 
-    <a href="tel:+916260374388">+91 6260374388</a>
-    <a href="tel:+916260374388" class="call-icon" title="Call">
-      <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Call"> -->
-    </a>
-  </p>
-
-  <div class="contact-socials">
-    <a href="https://github.com/vaibhavsingh1533" target="_blank" title="GitHub">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-    </a>
-
-    <a href="https://www.linkedin.com/in/vaibhav-pal-singh-845170285/" target="_blank" title="LinkedIn">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
-    </a>
-  </div>
-</section>
-<a href="Vaibhav_Pal_Singh_Resume.pdf" download class="floating-resume">
-   Download Resume
-</a>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
